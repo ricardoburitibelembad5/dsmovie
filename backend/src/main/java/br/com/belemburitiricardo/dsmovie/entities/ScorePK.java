@@ -14,11 +14,11 @@ public class ScorePK implements Serializable{
 
 /*chaves estrangeiras - chave primaria composta*/
 	
-	/*Mapeamento objeto-relacional*/
+	/*Mapeamento objeto-relacional */
 
-	@ManyToOne
+	@ManyToOne //configurando a relação entre movie e o score
 	@JoinColumn(name = "movie_id")
-	private Movie Movie;
+	private Movie movie;
 	
 	
 
@@ -30,11 +30,11 @@ public class ScorePK implements Serializable{
 	}
 	
 	public Movie getMovie() {
-		return Movie;
+		return movie;
 	}
 	
 	public void setMovie(Movie movie) {
-		Movie = movie;
+		this.movie = movie;
 	}
 	
 	public User getUser() {
