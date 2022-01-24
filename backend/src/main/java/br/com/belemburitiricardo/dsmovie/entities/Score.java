@@ -10,7 +10,7 @@ public class Score {
 
 	
 	@EmbeddedId
-	private ScorePK id = new ScorePK();
+	private ScorePK id = new ScorePK();//instaciamento
 	private Double value;
 	
 	
